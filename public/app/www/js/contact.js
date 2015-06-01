@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app.contact', ['ngRoute'])
+angular.module('app.contact', ['ngRoute', '$api'])
 
 
 

@@ -1,0 +1,72 @@
+* {
+  background-color:none;
+}
+html {
+  font-family: 'Open Sans';
+  background-color:#f3f3f3;
+}
+
+body  {
+  background-color:#f3f3f3;
+}
+
+md-card {
+  background-color:#fff;
+}
+
+
+/*
+        Header
+*/
+
+header{
+  background-color:#333;
+  width:100%;
+}
+
+header .title  {
+  padding:25px;
+  color:#fff;
+  text-align:center;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  padding:25px;
+  display: inline;
+}
+
+header a {
+  color:#fff;
+  text-decoration: none;
+  font-size:1.2em;
+}
+header a:visited {
+  color:#fff;
+}
+header a:hover {
+  color:#fff;
+}
+
+
+.project_header {
+  text-align:center;
+}
+
+
+
+
+/*
+
+      Index only css
+*/
+
+
+.index .header .content {
+  margin-left:10px;
+}

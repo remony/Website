@@ -1,0 +1,30 @@
+contact {
+  width:95%;
+  margin: 0 auto;
+
+}
+
+.profile_image {
+  width:100%;
+
+}
+
+contact .content {
+  padding:25px;
+}
+
+contact title {
+  text-align:center;
+}
+
+contact {
+  margin:0 auto;
+  margin-top:30px;
+  padding:5px;
+
+}
+
+contact card  {
+  padding:20px;
+  
+}

@@ -1,0 +1,27 @@
+<div class="wrapper animated  slideInLeft">
+
+  <h1>{{contact.title}}</h1>
+  <h2>Github Repos</h2>
+  <p ng-repeat="git in github"><a href="{{git.html_url}}">{{git.name}}</a>: {{git.description}}</p>
+
+  <div class="projects">
+    <div layout="row" layout-sm="column" layout-fill ng-repeat="array in obj2">
+          <md-card flex="50" flex-sm="100"  ng-repeat="project in array">
+            <div class="content">
+              <div class="image">
+                <img src="{{project.Image}}"/>
+              </div>
+              <h2><a href="#/project/{{project.id}}">{{project.Title}}</a></h2>
+              <h3>Description:</h3>
+              <p>{{project.Description}}</p>
+              <h3>Github/Other</h3>
+              <a href="{{project.github}}">{{project.Github}}</a>
+              <h3>Technology</h3>
+              {{project.Technology}}
+
+
+            </div>
+          </md-card>
+      </div>
+  </div>
+</div>

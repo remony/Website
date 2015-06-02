@@ -4,10 +4,11 @@ angular.module('app.contact', ['ngRoute'])
 
 
 
-.controller('ContactCtrl', ['app.apiFactory', function() {
-  $api.contact.success(function(data) {
+.controller('ContactCtrl', ['$api', '$scope', function($api, $scope) {
+  $api.contact().then(function(data) {
+    console.log(data);
     $scope.contact = data;
-  }).error(function(data) {
+  }, function(data) {
     $scope.contact = [{title : 'Error'}];
     });
 }]);

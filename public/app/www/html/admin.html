@@ -1,0 +1,42 @@
+
+
+<form ng-submit="login()" ng-hide="loggedin">
+  <h1>Please log in</h1>
+  Username<input ng-model="login.username"></input>
+  Password<input ng-model="login.password"></input>
+  <button class="button button-block button-positive" type="submit">Log in</button>
+</form>
+
+<div ng-show="loggedin">
+  <h1>Admin Panel</h1>
+
+  <md-card>
+
+    <form ng-submit="updateContact()">
+      <h2>Contact Details</h2>
+      <p>Fullname: <input ng-model="contact.name" /></p>
+      <p>Description: <input  ng-model="contact.desc" /></p>
+      <p>Email: <input ng-model="contact.email" /></p>
+      <p>Email2: <input ng-model="contact.email2" /></p>
+      <p>Linkedin: <input ng-model="contact.Linkedin" /></p>
+      <p>Github: <input  ng-model="contact.Github" /></p>
+
+      <button class="button button-block button-positive" type="submit">Update</button>
+    </form>
+  </md-card>
+
+  <md-card>
+    <h2>Add new project</h2>
+    <form ng-submit="addProject()">
+      <p>Title: <input ng-model="project.Title" /></p>
+      <p>Image: <input  ng-model="project.Image" /></p>
+      <p>Description: <input  ng-model="project.Description" /></p>
+      <p>Technology: <input  ng-model="project.Technology" /></p>
+      <p>Url: <input  ng-model="project.Url" /></p>
+      <p>Github: <input  ng-model="project.Github" /></p>
+      <p>Type: <input  ng-model="project.Type" /></p>
+      <button class="button button-block button-positive" type="submit">Add project</button>
+
+    </form>
+  </md-card>
+</div>

@@ -1,0 +1,16 @@
+<md-card flex="50" flex-sm="100">
+  <div class="content">
+    <div class="image">
+      <img src="{{project.Image}}"/>
+    </div>
+    <h2><a href="#/project/{{project.id}}">{{project.Title}}</a></h2>
+    <h3>Description:</h3>
+    <p>{{project.Description}}</p>
+    <h3>Github/Other</h3>
+    <a href="{{project.github}}">{{project.Github}}</a>
+    <h3>Technology</h3>
+    {{project.Technology}}
+
+
+  </div>
+</md-card>

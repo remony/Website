@@ -1,1 +1,68 @@
-<h1>Index</h1>
+
+<div class="index">
+
+  <div layout="row" layout-sm="column">
+<div class="header">
+<md-card>
+  <card flex>
+    <div class="title">
+      <h1>{{contact.title}}</h1>
+    </div>
+
+    <div layout="row" layout-sm="column" class="content">
+      <div flex="30" flex-sm="100">
+        <div class="profile_image">
+          <img src="{{contact.image}}"/>
+        </div>
+      </div>
+      <div flex="25" flex-sm="100"class="info">
+        <div class="content">
+          <h2>
+            {{contact.name}}
+          </h2>
+          <p class="desc">
+            {{contact.desc}}
+          </p>
+          <h3>Email</h3>
+          <div class="Email">
+            <p>University: {{contact.email}}</p>
+            <p>Personal: {{contact.email2}}</p>
+          </div>
+          <h3>Social</h3>
+          <p>Linkedin: {{contact.Linkedin}}</p>
+          <p>Github: {{contact.Github}}</p>
+        </div>
+      </div>
+    </div>
+  </card>
+</md-card>
+</div>
+
+
+<div class="projects" flex="50" flex-sm="100">
+  <div class="project_header">
+    <h1>Random Projects</h1>
+    <h2><a href='#/projects'>View All Projects</a></h2>
+  </div>
+      <div ng-repeat="project in projects">
+            <md-card>
+              <div class="content">
+                <div class="image">
+                  <img src="{{project.Image}}"/>
+                </div>
+                <h2><a href="#/project/{{project.id}}">{{project.Title}}</a></h2>
+                <h3>Description:</h3>
+                <p>{{project.Description}}</p>
+                <h3>Github/Other</h3>
+                <a href="{{project.github}}">{{project.Github}}</a>
+                <h3>Technology</h3>
+                {{project.Technology}}
+
+
+              </div>
+            </md-card>
+        </div>
+    </div>
+
+  </div>
+</div>

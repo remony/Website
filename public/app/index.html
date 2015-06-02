@@ -11,15 +11,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
-  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+  <link rel="stylesheet" href="www/css/main.css">
+  <link rel="stylesheet" href="www/css/projects.css">
+  <link rel="stylesheet" href="www/css/animate.css">
+  <link rel="stylesheet" href="www/css/contact.css">
+  <link rel="stylesheet" href="bower_components/open-sans-fontface/open-sans.css">
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/index">index</a></li>
-    <li><a href="#/contact">Contact</a></li>
+  <header>
+    <div class="title">
+      <h1 class="animated slideInDown">Stuart Douglas</h1>
+    </div>
+    <navigation>
+      <ul class="menu">
+        <li><a href="#/index">Home</a></li>
+        <li><a href="#/contact">Contact</a></li>
+        <li><a href="#/projects">Projects</a></li>
+      </ul>
+    </navigation>
+  </header>
 
-  </ul>
+
+
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -34,12 +49,17 @@
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+
   <script src="app.js"></script>
   <script src="www/js/api.js"></script>
   <script src="www/js/router.js"></script>
+  <script src="www/js/admin.js"></script>
 
   <script src="www/js/index.js"></script>
   <script src="www/js/contact.js"></script>
+  <script src="www/js/project.js"></script>
+  <script src="www/js/projects.js"></script>
 
 
 </body>

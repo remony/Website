@@ -1,1 +1,44 @@
-<h1>Contact</h1>
+<div class="wrapper ">
+
+
+
+<div layout="row">
+  <contact>
+<md-card>
+  <div class="title">
+    <h1>{{contact.title}}</h1>
+  </div>
+  <card flex>
+
+    <div layout="row" layout-sm="column">
+  <div flex="30">
+    <div class="profile_image">
+      <img src="{{contact.image}}"/>
+    </div>
+  </div>
+  <div flex="70">
+    <div class="content">
+    <h2>
+      {{contact.name}}
+    </h2>
+    <p class="desc">
+      {{contact.desc}}
+    </p>
+    <h3>Email</h3>
+    <div class="Email">
+      <p>University: {{contact.email}}</p>
+      <p>Personal: {{contact.email2}}</p>
+    </div>
+    <h3>Social</h3>
+    <p>Linkedin: {{contact.Linkedin}}</p>
+    <p>Github: {{contact.Github}}</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+  </card>
+</div>
+</md-card></contact>
+
+</div>

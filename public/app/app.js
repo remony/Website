@@ -6,5 +6,8 @@ angular.module('app', [
   'app.index',
   'app.controllers',
   'app.contact',
-  'app.apiFactory'
+  'app.apiFactory',
+  'app.projects',
+  'app.project',
+  'app.admin'
 ]);

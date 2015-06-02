@@ -169,7 +169,7 @@ angular.module('app.apiFactory', [])
           url: '/api/contact',
           method: 'POST',
           dataType: 'json',
-          data: {contact},
+          data: JSON.stringify(contact),
           headers: {
             'Content-Type': 'application/json; charset=utf-8'
           }
@@ -193,7 +193,7 @@ angular.module('app.apiFactory', [])
           url: '/api/project',
           method: 'POST',
           dataType: 'json',
-          data: {project},
+          data: JSON.stringify(project),
           headers: {
             'Content-Type': 'application/json; charset=utf-8'
           }
